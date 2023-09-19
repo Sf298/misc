@@ -5,7 +5,7 @@ import java.util.Map;
 
 import static java.util.stream.Collectors.toMap;
 
-public class SnakesAndLadders {
+public class SnakesAndSnakes {
 
     public static Map<Integer, Integer> snakes = Map.of(
             17, 7,
