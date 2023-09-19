@@ -11,7 +11,7 @@ https://github.com/Sf298/misc/blob/main/src/main/java/org/example/SnakesAndSnake
 50% of games are completed after 516 rolls
 75% of games are completed after 1001 rolls
 
-![graph of results](./SnakesAndSnakes.md)
+![graph of results](https://github.com/Sf298/misc/blob/main/results/SnakesAndSnakes.png)
 
 <details>
   <summary>Raw data output</summary>
