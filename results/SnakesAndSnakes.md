@@ -1,20 +1,17 @@
 # Snakes and snakes
-A simulation of the game played in [this video](https://www.youtube.com/watch?v=k2ixp5VozIs), to see what the chances are of completing the game in N rolls of the dice.
+A simulation of the game played in [this video](https://www.youtube.com/watch?v=k2ixp5VozIs), to see what percentage of all possible games are completed in N rolls of the dice.
 
 # Code
 https://github.com/Sf298/misc/blob/main/src/main/java/org/example/SnakesAndSnakes.java
 
 
 # Results
-
+```
 5% of games are completed after 67 rolls
-
 10% of games are completed after 104 rolls
-
 50% of games are completed after 516 rolls
-
 75% of games are completed after 1001 rolls
-
+```
 ![graph of results](https://github.com/Sf298/misc/blob/main/results/SnakesAndSnakes.png)
 
 <details>
