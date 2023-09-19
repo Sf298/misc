@@ -1,9 +1,7 @@
 package org.example;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 
 import static java.util.stream.Collectors.toMap;
 
@@ -31,57 +29,10 @@ public class SnakesAndLadders {
     );
 
     public static void main(String[] args) {
-        /*int sum = 0;
-        for (int i = 0; i < 1000; i++) {
-            sum += runOne();
-        }
-        System.out.println("avg: "+(sum/1000));
-        */
-        simAll();
-    }
-    public static long runOne() {
-        Map<Integer, Integer> newSnakes = new HashMap<>();
-        newSnakes.putAll(snakes);
-        newSnakes.putAll(reverseMap(ladders));
-
-        int player = 0;
-        int[] positionCount = new int[100];
-        Random r = new Random();
-
-        long step = 0;
-        gameloop: while (true) {
-            do {
-                int diceRoll = r.nextInt(6)+1;
-                player += diceRoll;
-                if (player > 99) {
-                    player = 99 - (player - 99);
-                }
-
-                if (player == 99) {
-                    break gameloop;
-                }
-
-                positionCount[player]++;
-
-                if (newSnakes.containsKey(player)) {
-                    player = newSnakes.get(player);
-                }
-
-                if (diceRoll != 6) break;
-            } while (true);
-
-            step++;
-
-            if (step % 100000000 == 0) {
-                System.out.println("step: "+step+"\t"+Arrays.toString(positionCount));
-            }
-        }
-
-        System.out.println("finished in "+step+" steps! "+Arrays.toString(positionCount));
-        return step;
+        simulate();
     }
 
-    public static void simAll() {
+    public static void simulate() {
         Map<Integer, Integer> newSnakes = new HashMap<>();
         newSnakes.putAll(snakes);
         newSnakes.putAll(reverseMap(ladders));
